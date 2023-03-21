@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TGIF</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,35 +31,38 @@
     <header>
       <img src="logo.png" alt="logo" />
       <p>Transparent Government in Fact</p>
-      >
     </header>
     <a class="logo" href="./home.html">TGIF</a>
-    <nav>
-      <ul>
-        <li><a class="button" href="./home.html">Home</a></li>
-        <li class="dropdown">
-          <button class="button dropdown-btn">Congress 113</button>
-          <ul class="dropdown-items">
-            <li><a href="./senate.html">Senate</a></li>
-            <li><a href="./house.html">House</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <button class="button dropdown-btn">Attendance</button>
-          <ul class="dropdown-items">
-            <li><a href="./senate-attendance.html">Senate</a></li>
-            <li><a href="./house-attendance.html">House</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <button class="button dropdown-btn">Loyalty</button>
-          <ul class="dropdown-items">
-            <li><a href="./senate-loyalty.html">Senate</a></li>
-            <li><a href="./house-loyalty.html">House</a></li>
-          </ul>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <ul>
+          <li><a class="button navbar-brand" href="./home.html">Home</a></li>
+          <li class="dropdown">
+            <button class="button dropdown-btn">Congress 113</button>
+            <ul class="dropdown-items">
+              <li><a href="./senate-page.html">Senate</a></li>
+              <li><a href="./house-page.html">House</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-btn">Attendance</button>
+            <ul class="dropdown-items">
+              <li><a href="./senate-attendance.html">Senate</a></li>
+              <li><a href="./house-attendance.html">House</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-btn">Loyalty</button>
+            <ul class="dropdown-items">
+              <li><a href="./senate-loyalty.html">Senate</a></li>
+              <li><a href="./house-loyalty.html">House</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <div></div>
 
     <div class="container">
       <h1>Senators</h1>
@@ -75,11 +79,42 @@
         the House.
       </p>
 
-      <div>
-        Filter by party:
-        <input type="checkbox" name="first-checkbox" value="republicans" />
-        <label for="first-checkbox">Republicans</label>
+      <div class="dynamic-options">
+        <div class="party-filter">
+          Filter by party:
+
+          <form class="all-checkboxes">
+            <input
+              id="first-checkbox"
+              name="R"
+              type="checkbox"
+              value="R"
+            /><label class="checkbox"> Republican </label>
+
+            <input name="D" type="checkbox" value="D" /><label class="checkbox">
+              Democrat
+            </label>
+
+            <input name="ID" type="checkbox" value="ID" /><label
+              class="checkbox"
+            >
+              Independent
+            </label>
+          </form>
+        </div>
+
+        <div class="state-filter">
+          Filter by state:
+          <select
+            class="states-options"
+            aria-label="All states"
+            style="width: 50%"
+          >
+            <option selected>All states</option>
+          </select>
+        </div>
       </div>
+      <br />
 
       <table class="table table-dark table-striped">
         <thead>
