@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.up {
+    display: flex;
+    justify-content: space-between;
+}
+.text-container {
+    display: block;
+    width: 48%;
+}
+.table-container {
+    display: block;
+    width: 48%;
+}
+.down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}

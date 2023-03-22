@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .dynamic-options  {
     display: flex;
     flex-direction: row;

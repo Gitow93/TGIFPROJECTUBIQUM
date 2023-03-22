@@ -1,8 +1,9 @@
-import {senateData} from "./senate-data.mjs"
-import {states} from "./states-data.mjs"
+import {senateData} from "/json/senate-data.mjs"
+import {states} from "/json/states-data.mjs"
 
 const members = senateData.results[0].members; // creamos una variable donde le damos el valor de la ruta que nos lleva a la array con la que vamos a trabajar
 const checkboxes = document.querySelectorAll("input[type=checkbox]"); // creamos una variable que contenga los checkboxes que hemos creado en html
+//al ser con un 'querySelector' no sale una array, si no una NodeList, por lo que habrá que meterlos en una array despues
 const dropdownMenu = document.querySelector('.states-options'); // variable que contiene la clase del elemento select de nuestro html
 let check = [] // declaramos una variable que contenga una array vacía para utilizarla más tarde con nuestro filter
 

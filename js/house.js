@@ -1,5 +1,5 @@
-import {houseData} from "./house-data.mjs"
-import {states} from "./states-data.mjs"
+import {houseData} from "/json/house-data.mjs"
+import {states} from "/json/states-data.mjs"
 
 const members = houseData.results[0].members;
 const checkboxes = document.querySelectorAll("input[type=checkbox]"); 
