@@ -24,9 +24,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/js/navbar.js"></script>
-    <script src="/js/senate.js" type="module"></script>
-    <!--Senate.js es type module porque está importando modulos desde senate-data.mjs -->
-  </head>
+    <script src="/js/senate-attendance.js" type="module"></script>  </head>
 
   <body>
     <header>
@@ -134,22 +132,8 @@
                 <th>% Voted with Party</th>
               </tr>
             </thead>
-            <tbody id="tbody">
-              <tr>
-                <td>Republican</td>
-                <td>--</td>
-                <td>--</td>
-              </tr>
-              <tr>
-                <td>Democrat</td>
-                <td>--</td>
-                <td>--</td>
-              </tr>
-              <tr>
-                <td>Independent</td>
-                <td>--</td>
-                <td>--</td>
-              </tr>
+            <tbody id="tbody">            
+              
             </tbody>
           </table>
         </div>
@@ -166,7 +150,7 @@
                 <th>% Missed</th>
               </tr>
             </thead>
-            <tbody id="tbody1"></tbody>
+            <tbody id="tbody-bottom"></tbody>
           </table>
         </div>
         <div class="table-container">
@@ -179,7 +163,7 @@
                 <th>% Missed</th>
               </tr>
             </thead>
-            <tbody id="tbody2"></tbody>
+            <tbody id="tbody-top"></tbody>
           </table>
         </div>
       </div>
