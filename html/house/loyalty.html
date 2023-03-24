@@ -22,7 +22,7 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/house.js" type="module"></script>
+    <script src="/js/house-loyalty.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -36,7 +36,7 @@
             <a
               class="nav-link active"
               aria-current="page"
-              href="/html/home-page.html"
+              href="/html/home.html"
               >Home</a
             >
           </li>
@@ -70,12 +70,12 @@
             >
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="attendance.html">Senate</a>
+                <a class="dropdown-item" href="/html/senate/attendance.html"
+                  >Senate</a
+                >
               </li>
               <li>
-                <a class="dropdown-item" href="/html/senate/attendance.html"
-                  >House</a
-                >
+                <a class="dropdown-item" href="attendance.html">House</a>
               </li>
             </ul>
           </li>
@@ -122,23 +122,7 @@
               <th>% Voted with Prty</th>
             </tr>
           </thead>
-          <tbody id="tbody">
-            <tr>
-              <td>Republican</td>
-              <td>--</td>
-              <td>--</td>
-            </tr>
-            <tr>
-              <td>Democrat</td>
-              <td>--</td>
-              <td>--</td>
-            </tr>
-            <tr>
-              <td>Independent</td>
-              <td>--</td>
-              <td>--</td>
-            </tr>
-          </tbody>
+          <tbody id="tbody"></tbody>
         </table>
       </div>
     </div>
@@ -151,10 +135,10 @@
             <tr>
               <th>Name</th>
               <th>Number Party Votes</th>
-              <th>% Party Votes</th>
+              <th>% Votes Against Party</th>
             </tr>
           </thead>
-          <tbody id="tbody1"></tbody>
+          <tbody id="tbody-bottom"></tbody>
         </table>
       </div>
       <div class="text-container">
@@ -164,15 +148,15 @@
             <tr>
               <th>Name</th>
               <th>Number Party Votes</th>
-              <th>% Party Votes</th>
+              <th>% Votes Against Party</th>
             </tr>
           </thead>
-          <tbody id="tbody2"></tbody>
+          <tbody id="tbody-top"></tbody>
         </table>
       </div>
     </div>
     <footer class="container footer">
-      &copy; 2021 TGIF | All Rights Reserved
+      &copy; 2023 TGIF | All Rights Reserved
     </footer>
   </body>
 </html>

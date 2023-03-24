@@ -4,11 +4,11 @@ const senateDataMembers = senateData.results[0].members;
 const statistics = calculateNumberOfReps(senateDataMembers);
 const leastEnganged = senateDataMembers
   .sort((a, b) => b.missed_votes_pct - a.missed_votes_pct)
-  .slice(0, 46);
+  .slice(0, 10);
 
 const mostEnganged = senateDataMembers
   .sort((a, b) => a.missed_votes_pct - b.missed_votes_pct)
-  .slice(0, 46);
+  .slice(0, 10);
 
 function filterByParty(senateMembers, partyCode) {
   return senateMembers.filter((member) => member.party === partyCode).length;
