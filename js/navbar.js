@@ -1,4 +1,4 @@
-// Close all dropdown lists if the user clicks outside of it
+
 window.addEventListener("click", (event) => {
   if (!event.target.matches(".dropdown-btn")) {
     Array.from(document.querySelectorAll(".dropdown")).forEach((elt) => {
@@ -7,7 +7,6 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// set all dropdown buttons to open their associated dropdown list on click
 Array.from(document.querySelectorAll(".dropdown-btn")).forEach((btn) => {
   const dropdown = btn.closest(".dropdown");
   if (dropdown) {

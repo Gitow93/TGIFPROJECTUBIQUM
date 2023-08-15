@@ -1,8 +1,39 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-.dynamic-options  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.dynamic-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(69, 69, 97);
+}
+
+.logo_image {
+  width: 80px;
+  height: 80px;
+}
+
+.header_title {
+  margin: 5px 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.up {
+  margin-top: 20px;
+}
+
+.text_container {
+  text-align: justify;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
 }
