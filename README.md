@@ -2,6 +2,9 @@
 
 Proyecto web que trata con información del gobierno de los Estados Unidos. Muestra un listado de los senadores y representantes de los diferentes partidos y utiliza la funcionalidad de un filtro para ordenarlos según su Estado o su Partido.
 
+**IMPORTANTE!!**
+No tiene diseño responsive. Esta exclusivamente diseñado para pantalla de ordenador.
+
 ## Tecnologías utilizadas
 
 - HTML5 & CSS
